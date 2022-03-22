@@ -1,31 +1,34 @@
-import react, { useContext } from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { useEthers, useEtherBalance } from "@usedapp/core";
+import Wallet from "./Wallet";
+import View from "./View";
+import Row from "./Row";
+
+const LinkContainer = styled(View)`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+`;
 
 const Header = () => {
+  return (
+    <div id="header">
+      <Link to="/" id="logo">
+        NFT Room
+      </Link>
 
-    const {activateBrowserWallet, account} = useEthers();
-    const etherBalance = useEtherBalance(account);
+      <LinkContainer>
+        <Row>
+          <Link to="/start-hunting">Start Hunting</Link>
+          <Link to="/start-hunting">Dark NFTs</Link>
+          <Link to="/start-hunting">Community</Link>
+          <Link to="/start-hunting">Craft NFT</Link>
+        </Row>
 
-    const handleWallet = () => {
-      activateBrowserWallet();
-
-    }
-
-    return (
-        <div id="header">
-        <Link to='/' id='logo'>NFT Room</Link>
-
-        <div id="link-containers">
-          <a>Start Hunting</a>
-          <a>Dark NFTs</a>
-          <a>Community</a>
-          <a>Craft NFT</a>
-
-          <button id="connect-wallet" onClick={handleWallet} >{!account ? 'Connect Wallet' : account}</button>
-        </div>
-      </div>
-    );
-}
+        <Wallet />
+      </LinkContainer>
+    </div>
+  );
+};
 
 export default Header;
