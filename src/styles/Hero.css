@@ -1,9 +1,8 @@
-:root{
-  
+:root {
 }
 
 #hero {
-  width:100%;
+  width: 100%;
   height: 500px;
   /* border: 1px solid cyan; */
   text-align: center;
@@ -13,9 +12,9 @@
   margin-top: 13rem;
 }
 
-#hero-background{
+#hero-background {
   width: 100%;
-  height:100%;
+  height: 100%;
   position: absolute;
   z-index: -1;
   bottom: 0;
@@ -23,33 +22,33 @@
   background-size: cover;
 
   /* clip-path: polygon(33% 4%, 63% 0, 86% 5%, 100% 37%, 83% 75%, 51% 81%, 22% 79%, 3% 65%, 6% 33%, 28% 23%); */
-
 }
 
-#hero:before{
-  content:'';
+#hero:before {
+  content: "";
   position: absolute;
-  top:0;
-  left:0;
-  background:url('../assets/splash.png');
+  top: 0;
+  left: 0;
+  background: url("../assets/splash.png");
   background-position: center;
   mix-blend-mode: screen;
   opacity: 0.3;
 }
 #header {
   height: 77px;
-    /* border: 0.001px solid red; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: fixed;
-    /* margin-bottom: 13rem; */
-    top: 0;
-    z-index: 1;
-    right: 0;
-    left: 0;
-    background: #100f17;
+  border-bottom: 0.1px solid #202020;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  /* margin-bottom: 13rem; */
+  top: 0;
+  z-index: 1;
+  right: 0;
+  left: 0;
+  background: #100f17;
+  padding: 0 30px;
 }
 
 #logo {
@@ -62,7 +61,6 @@
   text-decoration: none;
   border: none;
 }
-
 
 #connect-wallet {
   width: 180px;
@@ -93,11 +91,10 @@ a {
   border: 1px solid #ffffff;
 }
 
-#link-containers a{
+#link-containers a {
   border: 1px solid #100f17;
   border-radius: 30px;
 }
-
 
 #header-text-first {
   margin-top: 90px;
@@ -141,7 +138,7 @@ button#explore {
   height: 50px;
   margin-right: 20px;
   border-radius: 30px;
-  font-size:21px;
+  font-size: 21px;
   border: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -157,7 +154,7 @@ button#explore {
     #38ef7d,
     #11998e
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color:#ffffff;
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -166,7 +163,7 @@ button#create {
   height: 50px;
   margin-left: 20px;
   border-radius: 30px;
-  font-size:21px;
+  font-size: 21px;
   border: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -174,30 +171,26 @@ button#create {
   border: 2px solid #ffffff;
   color: #ffffff;
   cursor: pointer;
-  
 }
 
-
 @media screen and (max-width: 978px) {
-  a:not(#logo){
-    display:none;
+  a:not(#logo) {
+    display: none;
   }
 
-  #logo{
+  #logo {
     font-size: 18px;
     float: left;
     margin-left: 10px;
   }
 
   #hero {
-   
     height: 600px;
     /* border: 1px solid cyan; */
     text-align: center;
   }
 
   #header {
-    
     height: 100px;
     /* border: 0.001px solid red; */
     display: flex;
@@ -214,15 +207,15 @@ button#create {
     color: #ffffff;
     font-family: "Rock Salt", cursive;
   }
-  
+
   #header-text-second {
     font-size: 36px;
-  
+
     color: #ffffff;
     font-family: "Rock Salt", cursive;
     margin-top: 20px;
   }
-  
+
   #header-subtext {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -231,7 +224,7 @@ button#create {
     color: #666c70;
     margin-top: 20px;
   }
-  
+
   #hero-buttons {
     /* border:1px solid red; */
     display: flex;
@@ -242,7 +235,6 @@ button#create {
     padding-left: 20px;
     padding-right: 20px;
   }
-  
 
   button#explore {
     width: 180px;
@@ -252,7 +244,7 @@ button#create {
     border: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  
+
     background: #11998e; /* fallback for old browsers */
     background: -webkit-linear-gradient(
       to bottom,
@@ -264,12 +256,12 @@ button#create {
       #38ef7d,
       #11998e
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+
     font-weight: 600;
-    color:#ffffff;
+    color: #ffffff;
     cursor: pointer;
   }
-  
+
   button#create {
     width: 180px;
     height: 50px;
@@ -278,21 +270,14 @@ button#create {
     border: none;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background-color: #100F17;
+    background-color: #100f17;
     border: 1px solid #ffffff;
-    
+
     font-weight: 600;
     color: #ffffff;
     cursor: pointer;
   }
-
 }
-
-
-
-
-
-
 
 /* @keyframes borderAnimation {
 

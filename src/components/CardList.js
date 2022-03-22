@@ -1,15 +1,22 @@
 import React from "react";
 import NFTCard from "./NFTCard";
 import "../styles/CardList.css";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
-const CardList = ({ list,type="horizontal" }) => {
-  let navigate = useNavigate();
+const CardList = ({ list, type = "horizontal" }) => {
+  const history = useHistory();
 
   return (
-    <div id="card-list" style={{flexDirection:type=="horizontal" ? "row" : "column"}}>
-      {list.map((item,index) => (
-        <NFTCard nftSrc={item.src} key={index} onClick={()=>navigate('/detail',{state:{item:item}})}/>
+    <div
+      id="card-list"
+      style={{ flexDirection: type === "horizontal" ? "row" : "column" }}
+    >
+      {list.map((item, index) => (
+        <NFTCard
+          nftSrc={item.src}
+          key={index}
+          onClick={() => history.push("/detail", { state: { item: item } })}
+        />
       ))}
     </div>
   );
