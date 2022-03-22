@@ -1,38 +1,19 @@
-# Marketplace Frontend
+# Open Source Nft Marketplace [Onprogress %10]
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-Minion's Marketplace
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+Reactjs And Smart Contracts Open Source Basic Nft Marketplace App
 
-## Setup
+> ## ⭐ Support Us
+> If you like our project, do not forget to give stars. So we can get more attention and get more support from the community. Don't underestimate one star, one  star you give will convince others to give the project another star.
 
-0. Fill environment variables
 
-```
-$ mv .env.example .env
-$ vi .env
-```
+## 💪 Motivation
 
-1. Install dependencies
+## 🎉 Roadmap
 
-```
-$ npm install
-```
+## 🔮 Usage
+In the project directory, you can run:
 
-2. Run development server
-
-```
-$ npm start
-```
-
-3. Build for production
-
-```
-$ npm run build
-```
-
-## Generate TypeScript interfaces for contracts
-
-If you want to regenerate the contract typings in `webapp/src/contract` do the following:
-
-```
-npx web3x-codegen
-```
+### `npm install (for first running)`
+### `npm start`
