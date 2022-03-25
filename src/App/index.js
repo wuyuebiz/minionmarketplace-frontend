@@ -14,9 +14,9 @@ function App() {
         <Switch>
         <Redirect exact from="/" to={"/home"} />
           <Route path="/home" exact component={Home} />
-          <Route path="/create" component={Create} />
-          <Route path="/explore" component={Explore} />
-          <Route path="/detail" component={NFTDetail} />
+          <Route path="/create" exact component={Create} />
+          <Route path="/explore" exact component={Explore} />
+          <Route path="/detail" exact component={NFTDetail} />
         </Switch>
       <SelectWallet />
       </BrowserRouter>
